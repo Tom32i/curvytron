@@ -177,7 +177,9 @@ GameController.prototype.onProperty = function(e)
     if (avatar) {
         avatar.set(data.property, data.value);
 
-        if (!this.game.running) {
+        console.log(this.game.frame, data.property, data.value);
+
+        if (!this.game.frame) {
             this.game.draw();
         }
 

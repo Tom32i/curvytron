@@ -48,6 +48,7 @@ BaseBonusManager.prototype.start = function() {};
 BaseBonusManager.prototype.stop = function()
 {
     this.clear();
+    console.log('BaseBonusManager.stop');
 };
 
 /**
